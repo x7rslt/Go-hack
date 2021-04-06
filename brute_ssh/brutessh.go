@@ -27,7 +27,7 @@ func testSSHAUTH(ip, username, password string, doneChannel chan bool) {
 }
 
 func main() {
-	ip := "114.116.230.93:22"
+	ip := "IP:22"
 	username := "root"
 	passwordfile, err := os.Open("wordlist")
 	if err != nil {

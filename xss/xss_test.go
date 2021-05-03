@@ -9,7 +9,7 @@ import (
 
 func TestXss(t *testing.T) {
 	rawString := `<script>alert("xss")</script>`
-	safeString := html.EscapeString(rawString)
+	safeString := html.EscapeString(rawString) //escape:编码转义
 
 	file, err := os.Create("./xssexample.html") //浏览器查看.html文件，rawstring有弹窗，safeString正常显示
 	if err != nil {

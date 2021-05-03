@@ -33,7 +33,7 @@ func main() {
 		os.Exit(0)
 	}
 
-	word := make(chan string, 0)
+	word := make(chan string, 0) //word 没有接收，为什么没有进程堵塞？
 	found := make(chan string, 0)
 
 	var wg sync.WaitGroup

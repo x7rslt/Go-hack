@@ -130,7 +130,7 @@ func bruteForce() {
 
 	for activeThreads > 0 {
 		<-doneChannel
-		//activeThreads -= 1  //貌似没有用
+		activeThreads -= 1 //实测有用
 	}
 }
 

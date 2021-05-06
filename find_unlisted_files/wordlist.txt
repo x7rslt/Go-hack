@@ -1,0 +1,12 @@
+admin
+user
+password
+index
+forward
+test
+1
+control
+tomcat
+manager
+manage
+panel
